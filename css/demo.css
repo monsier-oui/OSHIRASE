@@ -1,0 +1,11 @@
+@charset "UTF-8";
+
+#eyecatch {
+	max-width: 1000px;
+}
+
+#notice p {
+	padding: 2rem;
+	background: #FFC0CB;
+	border-radius: 1rem;
+}
