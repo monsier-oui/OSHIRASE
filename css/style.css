@@ -1328,6 +1328,11 @@ input[type="radio"]:checked + i:before {
   .sample-img:before {
     padding-top: 45%;
   }
+  
+.icon-social {
+  width: 40px;
+  height: 40px;
+}
 
   /* dl要素 */
   dl dt,
