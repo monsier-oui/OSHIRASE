@@ -1,0 +1,70 @@
+//========================
+// Mixins
+//========================
+
+// clear
+@mixin clear {
+	clear: both;
+}
+@mixin clearfix {
+	display: block;
+	*zoom: 1;
+	&:after {
+		display: block;
+		visibility: hidden;
+		font-size: 0;
+		height: 0;
+		clear: both;
+		content: ".";
+	}
+}
+
+// inline-block
+@mixin inline-block {
+	display: inline-block;
+	*display: inline;
+	*zoom: 1;
+}
+
+// 余白をつめる
+@mixin no-margin {
+	margin: 0;
+	padding: 0;
+}
+
+// リスト頭を消す
+@mixin no-bullets {
+	list-style: none;
+	padding: 0;
+	li {
+		list-style-image: none;
+		list-style-type: none;
+		margin-left: 0;
+	}
+}
+
+// hover時の色変え
+@mixin background-color-hover($color: #AAAAAA) {
+	background-color: $color;
+	&:hover,
+	&:active {
+		background-color: lighten($color, 8%);
+	}
+}
+
+// 角丸
+@mixin border-radius($radius: 0) {
+	border-radius: $radius;
+}
+
+// 透過
+@mixin opacity($opacity: 0.25) {
+	opacity: $opacity;
+	$ms-opacity: $opacity*100;
+	filter: alpha(opacity=$ms-opacity);
+}
+
+// トランジション
+@mixin transition($duration:0.2s, $ease:ease-out) {
+	transition: all $duration $ease;
+}
