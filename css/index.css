@@ -3,6 +3,9 @@
 * {
 	box-sizing: border-box;
 }
+html {
+	font-size: 11pt;
+}
 body {
 	margin: 0;
 	padding: 0;
@@ -29,19 +32,19 @@ a:hover {
 	text-decoration: underline;
 }
 a.link {
-	margin: 1.5em 0.5em;
-	padding: 1em 2.8em;
+	margin: 1.5rem 0.5rem;
+	padding: 1rem 2.8rem;
 	outline: none;
 	border: none;
-	border-radius: 0.3em;
+	border-radius: 0.3rem;
 	display: inline-block;
 	*display: inline;
 	*zoom: 1;
 	color: white;
 	font-family: "Merriweather", serif;
-	font-size: 1.6em;
+	font-size: 1.6rem;
 	text-transform: uppercase;
-	box-shadow: inset 0 -0.2rem rgba(0, 0, 0, 0.1);
+	box-shadow: inset 0 -0.2rrem rgba(0, 0, 0, 0.1);
 	transition: all 0.2s ease-out;
 	background-color: #1ba5a5;
 	text-decoration: none;
@@ -78,18 +81,19 @@ a.link:active {
 	border-radius: 50%;
 }
 .feature h2 {
-	margin: 0.6em 0;
-	height: 2.4em;
-	font-size: 1.3em;
+	margin: 0.6rem 0;
+	height: 2.4rem;
+	font-size: 1.3rem;
 }
 .feature p {
-	font-size: 0.9em;
-	line-height: 1.6em;
+	font-size: 0.9rem;
+	line-height: 1.6rem;
 	text-align: left;
 }
 .feature small {
 	color: #777777;
-	line-height: 1.3em;
+	font-size: 0.8rem;
+	line-height: 1.3rem;
 }
 
 hr {
@@ -106,7 +110,10 @@ hr {
 	color: #888888;
 }
 
-@media screen and (max-width: 768px) {
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 40 / 71) {
+	html {
+		font-size: 24pt;
+	}
 	.feature {
 		width: 100%;
 	}
