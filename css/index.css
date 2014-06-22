@@ -54,11 +54,7 @@ a.link:active {
 }
 
 #image {
-	background-image: url('../img/image.png');
-	background-size: cover;
 	margin: 0 auto;
-	width: 859px;
-	height: 1101px;
 }
 #image:before {
 	content: '';
@@ -113,6 +109,18 @@ hr {
 @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 40 / 71) {
 	html {
 		font-size: 24pt;
+	}
+	.feature {
+		width: 100%;
+	}
+}
+@media screen and (max-width: 768px) {
+	html {
+		font-size: 24pt;
+	}
+	#image {
+		width: 100%;
+		height: auto;
 	}
 	.feature {
 		width: 100%;
