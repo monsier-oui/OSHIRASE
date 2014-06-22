@@ -4,9 +4,9 @@ OSHIRASE
 アンソロジーや合同誌、オンリーイベントなどの告知サイトのためのHTMLテンプレートです。
 
 ##使い方
-1. [ここ](https://github.com/monsier-oui/OSHIRASE/archive/master.zip)からアーカイブファイルをダウンロードして解凍する
-* index.html をテキストエディタで開いて必要な情報を書く
-	* パーツはガンガン削ったり足したりしてオッケーです。叩き台として使ってください。
+1. [ここ](https://github.com/monsier-oui/OSHIRASE/archive/master.zip)からダウンロードする
+* index.html をテキストエディタで開いて必要な情報を書く  
+※ソースはガンガン削ったり足したりしてオッケーです。叩き台として使ってください。
 * サーバにアップロードする 
 
 ###用意する画像ファイル
@@ -17,7 +17,7 @@ OSHIRASE
 * フライヤー(あれば)
 
 ##作業上の注意
-ファイルの編集には必ずテキストエディタ(メモ帳、ビルダーはダメ)を使ってください。普段テキストエディタを使わない方へのオススメは、Windowsなら[サクラエディタ](http://sakura-editor.sourceforge.net/)、Macなら[CotEditor](http://coteditor.github.io/)。
+ファイルの編集には必ずテキストエディタ(メモ帳、ビルダーはNG)を使ってください。普段テキストエディタを使わない方へのオススメは、Windowsなら[サクラエディタ](http://sakura-editor.sourceforge.net/)、Macなら[CotEditor](http://coteditor.github.io/)。
 
 ##動作確認環境
 * Google Chrome 35
@@ -29,10 +29,51 @@ OSHIRASE
 
 ###フォントについて
 
-一部の要素に[Google Fonts](https://www.google.com/fonts)を利用しています。他のフォントに変えたい場合は、Google FontsからCSSファイルを呼び出すコードと、`style.css`の`font-family`プロパティを修正してください。
+一部の要素に[Google Fonts](https://www.google.com/fonts)を利用しています。他のフォントに変えたい場合は、Google FontsからCSSファイルを呼び出すコードと、`style.css`で指定している`font-family`プロパティを修正してください。
 
 ###OGPについて
 
+OGPは、ざっくり言えばTwitterやFacebookに投稿したときにサムネイルやページ概要を自動で表示してくれる機能です。詳しくは以下の記事が参考になると思います。
+
+[OGP設定がしてあれば10分で設定完了！ツイートをより魅力的にしてくれる「Twitterカード」の設定方法｜Tips*Blog｜株式会社コプロシステム](http://www.coprosystem.co.jp/tipsblog/2014/05/01.html)
+
+Twitterへの申請は承認までちょっと時間がかかる(1日〜数日?くらい?)こともあるので、申請だけでも先にしておいたほうがよさそうです。
+
+もちろん、いらない!ということであればヘッダの記述ごと削除していただいて構いません。
+
+###ソーシャルメディアアイコンについて
+
+[こちら](http://wolfrosch.com/works/webdesign/socialicons)から以下のアイコンをお借りして同梱しています。
+
+* pixiv
+* novelist
+* TINAMI
+* Twitter
+* Facebook
+* tumblr
+* ピアプロ
+* ニコニコ動画
+* soundcloud
+
+他のサービスのアイコンが必要であれば追加でダウンロードして、`style.css`の984行目あたりにクラスを追加してください。
+
+```
+.icon-XXX { /* XXX=サービスの名前 */
+  background-image: url(../img/icons/XXX@2x.png);
+}
+```
+
+そして、アイコンを追加したいところに下記を追加します。
+
+```
+<i class="icon-social icon-XXX"></i>
+```
 
 ##License
-MIT License
+This software is released under the MIT License.
+
+###同梱物のライセンス
+
+* [Normalize.css](http://necolas.github.io/normalize.css/) - MIT License
+* [Media Queries Mixins for Sass](http://paranoida.github.io/sass-mediaqueries/) - MIT License
+* [ミニ・ソーシャル・アイコン](http://wolfrosch.com/works/webdesign/socialicons) - Public Domain
