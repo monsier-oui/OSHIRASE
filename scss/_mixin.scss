@@ -10,12 +10,12 @@
 	display: block;
 	*zoom: 1;
 	&:after {
+		content: ".";
 		display: block;
 		visibility: hidden;
-		font-size: 0;
 		height: 0;
+		font-size: 0;
 		clear: both;
-		content: ".";
 	}
 }
 
@@ -53,12 +53,12 @@
 }
 
 // 角丸
-@mixin border-radius($radius: 0) {
+@mixin border-radius($radius) {
 	border-radius: $radius;
 }
 
 // 透過
-@mixin opacity($opacity: 0.25) {
+@mixin opacity($opacity) {
 	opacity: $opacity;
 	$ms-opacity: $opacity*100;
 	filter: alpha(opacity=$ms-opacity);

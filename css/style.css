@@ -503,12 +503,12 @@ section {
   *zoom: 1;
 }
 section:after {
+  content: ".";
   display: block;
   visibility: hidden;
-  font-size: 0;
   height: 0;
+  font-size: 0;
   clear: both;
-  content: ".";
 }
 
 /* 定義リスト */
@@ -701,12 +701,12 @@ pre {
   *zoom: 1;
 }
 #spec:after {
+  content: ".";
   display: block;
   visibility: hidden;
-  font-size: 0;
   height: 0;
+  font-size: 0;
   clear: both;
-  content: ".";
 }
 #spec dt:before {
   content: "";
@@ -842,12 +842,12 @@ pre {
   margin-left: 0;
 }
 #sample-list:after {
+  content: ".";
   display: block;
   visibility: hidden;
-  font-size: 0;
   height: 0;
+  font-size: 0;
   clear: both;
-  content: ".";
 }
 #sample-list li {
   display: inline-block;
