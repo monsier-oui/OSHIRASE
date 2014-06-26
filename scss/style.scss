@@ -25,11 +25,11 @@ $font-serif: 'Merriweather', Georgia, "Times New Roman", Times, serif;
 /* Main
    ========================================================================== */
 
-html {
-//	font-size: 11pt;
-}
 * {
 	box-sizing: border-box;
+}
+html {
+	font-size: 12px;
 }
 
 body {

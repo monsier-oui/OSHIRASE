@@ -401,6 +401,10 @@ th {
   box-sizing: border-box;
 }
 
+html {
+  font-size: 12px;
+}
+
 body {
   background: white;
   color: #555555;
@@ -1193,6 +1197,7 @@ input[type="radio"]:checked + i:before {
   #eyecatch {
     margin-top: 45px;
     height: 400px;
+    letter-spacing: 0.01%;
   }
 
   /* 紙もの */
@@ -1306,6 +1311,7 @@ input[type="radio"]:checked + i:before {
   #eyecatch {
     margin-top: 45px;
     height: 400px;
+    letter-spacing: 0.01%;
   }
 
   /* 紙もの */
