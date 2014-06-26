@@ -315,6 +315,7 @@
 	/* アイキャッチ */
 	#eyecatch {
 		margin-top: 45px;
+		height: 400px;
 	}
 	
 	/* 紙もの */
@@ -340,7 +341,6 @@
 			padding-top: 45%;
 		}
 	}
-	
 	.icon-social {
 		width: 40px;
 		height: 40px;
@@ -390,17 +390,6 @@
 	@include sumaho;
 }
 
-@include iphone5 {
-	@include sumaho;
-}
-
 @include max-screen(580px) {
-	#sample-list {
-		li {
-			width: 100%;
-		}
-	}
-	.sample-caption {
-		bottom: -55%;
-	}
+	@include sumaho;
 }

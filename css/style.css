@@ -908,7 +908,7 @@ pre {
 .sample-caption p {
   margin: 0;
   padding: 0;
-  margin-bottom: 0.6rem;
+  margin-bottom: 0.2rem;
   z-index: 9;
   opacity: 0;
   filter: alpha(opacity=0);
@@ -1192,117 +1192,7 @@ input[type="radio"]:checked + i:before {
   /* アイキャッチ */
   #eyecatch {
     margin-top: 45px;
-  }
-
-  /* 紙もの */
-  .paper {
-    margin: 0 auto;
-    width: 100%;
-    float: none;
-  }
-
-  /* LINEボタンはスマホのみ表示 */
-  .btn.line {
-    display: block;
-  }
-
-  /* サンプル一覧 */
-  #sample-list li {
-    width: 100%;
-  }
-
-  .sample-img:before {
-    padding-top: 45%;
-  }
-
-  .icon-social {
-    width: 40px;
-    height: 40px;
-  }
-
-  /* dl要素 */
-  dl dt,
-  dl dd,
-  dl.contact-form dt,
-  dl.contact-form dd {
-    display: block;
-    width: 100%;
-  }
-  dl dt,
-  dl.contact-form dt {
-    text-align: left;
-  }
-  dl dt:before, dl dt:after,
-  dl.contact-form dt:before,
-  dl.contact-form dt:after {
-    display: none;
-  }
-  dl:before,
-  dl.contact-form:before {
-    display: none;
-  }
-
-  /* フッター */
-  #footer > div {
-    width: 100%;
-    float: none;
-  }
-}
-@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 40 / 71) {
-  /* ラッパ */
-  .wrapper {
-    padding: 0.5rem;
-  }
-
-  /* ナビゲーションバー */
-  #navbar {
-    position: fixed;
-    min-height: 45px;
-    font-size: 1.8rem;
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
-  }
-
-  #nav {
-    margin: 0;
-    padding: 0;
-    width: 86%;
-  }
-  #nav li {
-    margin: 0;
-    padding: 0;
-    display: block;
-  }
-  #nav li a {
-    padding: 0.8rem 0.6em;
-  }
-  #nav li a:active {
-    background-color: #f9d76d;
-  }
-
-  #nav-opener {
-    display: block;
-    position: relative;
-    float: right;
-    margin: 0 10px 0 0;
-    padding: 10px;
-    color: white;
-    line-height: 1;
-  }
-
-  #nav-opener-check + ul {
-    overflow: hidden;
-    transition: all 1s 0.5s;
-    opacity: 0;
-    max-height: 0;
-  }
-  #nav-opener-check:checked + ul {
-    opacity: 1;
-    max-height: 50rem;
-  }
-
-  /* アイキャッチ */
-  #eyecatch {
-    margin-top: 45px;
+    height: 400px;
   }
 
   /* 紙もの */
@@ -1360,11 +1250,114 @@ input[type="radio"]:checked + i:before {
   }
 }
 @media screen and (max-width: 580px) {
+  /* ラッパ */
+  .wrapper {
+    padding: 0.5rem;
+  }
+
+  /* ナビゲーションバー */
+  #navbar {
+    position: fixed;
+    min-height: 45px;
+    font-size: 1.8rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+  }
+
+  #nav {
+    margin: 0;
+    padding: 0;
+    width: 86%;
+  }
+  #nav li {
+    margin: 0;
+    padding: 0;
+    display: block;
+  }
+  #nav li a {
+    padding: 0.8rem 0.6em;
+  }
+  #nav li a:active {
+    background-color: #f9d76d;
+  }
+
+  #nav-opener {
+    display: block;
+    position: relative;
+    float: right;
+    margin: 0 10px 0 0;
+    padding: 10px;
+    color: white;
+    line-height: 1;
+  }
+
+  #nav-opener-check + ul {
+    overflow: hidden;
+    transition: all 1s 0.5s;
+    opacity: 0;
+    max-height: 0;
+  }
+  #nav-opener-check:checked + ul {
+    opacity: 1;
+    max-height: 50rem;
+  }
+
+  /* アイキャッチ */
+  #eyecatch {
+    margin-top: 45px;
+    height: 400px;
+  }
+
+  /* 紙もの */
+  .paper {
+    margin: 0 auto;
+    width: 100%;
+    float: none;
+  }
+
+  /* LINEボタンはスマホのみ表示 */
+  .btn.line {
+    display: block;
+  }
+
+  /* サンプル一覧 */
   #sample-list li {
     width: 100%;
   }
 
-  .sample-caption {
-    bottom: -55%;
+  .sample-img:before {
+    padding-top: 45%;
+  }
+
+  .icon-social {
+    width: 40px;
+    height: 40px;
+  }
+
+  /* dl要素 */
+  dl dt,
+  dl dd,
+  dl.contact-form dt,
+  dl.contact-form dd {
+    display: block;
+    width: 100%;
+  }
+  dl dt,
+  dl.contact-form dt {
+    text-align: left;
+  }
+  dl dt:before, dl dt:after,
+  dl.contact-form dt:before,
+  dl.contact-form dt:after {
+    display: none;
+  }
+  dl:before,
+  dl.contact-form:before {
+    display: none;
+  }
+
+  /* フッター */
+  #footer > div {
+    width: 100%;
+    float: none;
   }
 }

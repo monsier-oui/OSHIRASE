@@ -476,7 +476,7 @@ pre {
 	@include transition(0.5s, 0.2s);
 	p {
 		@include no-margin;
-		margin-bottom: 0.6rem;
+		margin-bottom: 0.2rem;
 		z-index: 9;
 		@include opacity(0);
 		@include transition(0.5s, 0.2s);
