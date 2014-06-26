@@ -77,3 +77,10 @@ This software is released under the MIT License.
 * [Normalize.css](http://necolas.github.io/normalize.css/) - MIT License
 * [Media Queries Mixins for Sass](http://paranoida.github.io/sass-mediaqueries/) - MIT License
 * [ミニ・ソーシャル・アイコン](http://wolfrosch.com/works/webdesign/socialicons) - Public Domain
+
+##更新履歴
+###2014/6/26
+* Android端末にも対応した(はず…)
+
+###2014/6/22
+* リリース
