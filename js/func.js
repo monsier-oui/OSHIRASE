@@ -32,7 +32,7 @@ $(document).ready(function(){
 
 	//ソーシャルなんとか
 	var url = location.href;
-	var title = document.title;
+	var title = encodeURIComponent(document.title);
 	//ツイートボタン
 	$('#tweet').click(function(){
 		window.open('http://twitter.com/share?text='+title+'&url='+url, 'tweetwindow', 'width=550, height=420');
@@ -71,6 +71,6 @@ $(document).ready(function(){
 	});
 	//LINEで送るボタン
 	$('#line').click(function(){
-		window.location.href = 'line://msg/text/'+encodeURI(title)+' '+url;
+		window.location.href = 'line://msg/text/'+title+' '+url;
 	});
 });
