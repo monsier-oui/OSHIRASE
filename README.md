@@ -2,6 +2,7 @@ OSHIRASE
 ========
 
 アンソロジーや合同誌、オンリーイベントなどの告知サイトのためのHTMLテンプレートです。
+[使用例](http://monsier-oui.github.io/OSHIRASE/)
 
 ##使い方
 1. [ここ](https://github.com/monsier-oui/OSHIRASE/archive/master.zip)からダウンロードする
@@ -68,6 +69,7 @@ Twitterへの申請は承認までちょっと時間がかかる(1日〜数日?�
 ```
 <i class="icon-social icon-XXX"></i>
 ```
+
 
 ##License
 This software is released under the MIT License.
