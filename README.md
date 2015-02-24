@@ -1,7 +1,7 @@
 OSHIRASE
 ========
 
-アンソロジーや合同誌、オンリーイベントなどの告知サイトのためのHTMLテンプレートです。デモページは[こちら](http://monsier-oui.github.io/OSHIRASE/)
+アンソロジーや合同誌、オンリーイベントなどの告知サイトのためのHTMLテンプレートです。デモページは[こちら](http://monsier-oui.github.io/OSHIRASE/demo.html)
 
 ## 使い方
 1. [ここ](https://github.com/monsier-oui/OSHIRASE/archive/master.zip)からダウンロードする
