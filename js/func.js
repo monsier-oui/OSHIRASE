@@ -1,4 +1,46 @@
 $(document).ready(function(){
+	// Enterページ的なやつ
+	if($('#enter').length > 0){ // 要素が存在していたら処理を行う
+		// 訪問済みかCookieで判定
+		var flag = false;
+		var cookies = document.cookie;
+		if(cookies.length>0){
+			cookies = cookies.split(';');
+			for(var i in cookies){
+				if(cookies[i].indexOf('entered') > -1){
+					flag = true;
+				}
+			}
+		}
+		
+		// Enterページ的なやつを表示
+		if(!flag){
+			$('#enter').addClass('show');
+		}
+		
+		// Enterボタンクリックで訪問済みフラグ樹立
+		$('#button-enter').click(function(){
+			// Cookieでフラグをたてる
+			var path = location.pathname.split('/');
+			if(path[path.length-1] != ''){
+				path[path.length-1] = '';
+				path = path.join('/');
+			}
+			var extime = new Date().getTime();
+			extime = new Date(extime + (60*60*24*180*1000)); // 有効期限=180日
+			extime = extime.toUTCString();
+			document.cookie = 'entered=true; path='+path+'; expires='+extime+'; ';
+			
+			// スクロール位置を初期化
+			if($(window).scrollTop()>0){
+				$(window).delay(1000).scrollTop(0,0);
+			}
+			
+			// Enterページ的なやつをはずす
+			$('#enter').removeClass('show');
+		});
+	}
+	
 	// ナビゲーションリンクをクリックしてスクロールする
 	$('#nav a[href^="#"]').click(function(event){
 		var id = $(this).attr("href");

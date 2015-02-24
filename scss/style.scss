@@ -7,11 +7,11 @@
 // Variables
 //========================
 
-$color-white: #FFFFFF;
-$color-green: #1BA5A5;
+$color-white: #ffffff;
+$color-green: #1ba5a5;
 $color-yellow: #f9d76d;
-$color-light: #EFEFEF;
-$color-gray: #AAAAAA;
+$color-light: #efefef;
+$color-gray: #aaaaaa;
 $color-dark: #555555;
 $color-black: #000000;
 
@@ -40,6 +40,7 @@ body {
 #body-wrapper {
 	display: table;
 	table-layout: fixed;
+	position: relative;
 	height: 100%;
 	width: 100%;
 }
@@ -165,6 +166,28 @@ pre {
 	font-family: Consolas, 'Courier New', Courier, Monaco, monospace;
 	white-space: pre;
 	white-space: pre-wrap;
+}
+
+/* Enterページ的なやつ */
+#enter {
+	margin: 0;
+	position: absolute;
+	background-color: $color-white;
+	@include transition(0.8s);
+	z-index: -1;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	padding: 20% 2em;
+	@include opacity(0);
+	&.show {
+		z-index: 99999;
+		@include opacity(1);
+	}
+}
+#button-enter {
+	margin-top: 2em;
 }
 
 /* アイキャッチ */
@@ -350,7 +373,7 @@ pre {
 #share {
 	@include no-margin;
 	margin-top: 2rem;
-	@include no-bullets;	
+	@include no-bullets;
 	text-align: center;
 	li {
 		@include inline-block;
@@ -362,13 +385,13 @@ pre {
 	}
 }
 .btn.twitter {
-	@include background-color-hover(#55ACEE);
+	@include background-color-hover(#55acee);
 }
 .btn.facebook {
 	@include background-color-hover(#3b5998);
 }
 .btn.line {
-	@include background-color-hover(#00C300);
+	@include background-color-hover(#00c300);
 	display: none;
 }
 .social-count {
@@ -648,7 +671,7 @@ input[type="radio"]{
 	margin-top: 2rem;
 	text-align: center;
 	clear: both;
-	font-family: 'Merriweather', Georgia, "Times New Roman", Times, serif;
+	font-family: $font-serif;
 	font-size: 0.9rem;
 }
 
